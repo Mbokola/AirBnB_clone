@@ -1,18 +1,8 @@
 body {
-    color: #484848;
+    margin: 0; padding: 0; color: #484848; font-size: 14px;
     font-family: Circular,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 14px;
-    margin: 0;
-    padding: 0;
-}
-p {
-    text-align: center;
 }
 .container {
-    margin-bottom: 30px;
-    margin-top: 30px;
-    max-width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
- }
+    max-width: 1000px; margin-top: 30px auto; margin-bottom: 0;
+    margin: 0 auto;
+}

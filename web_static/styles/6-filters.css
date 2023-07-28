@@ -2,7 +2,7 @@
     background-color: white; height: 70px; width: 100%;
     border: 1px solid #DDDDDD; border-radius: 4px;
     display: flex; align-items: center;
-    position: relative;
+    position: relative; z-index: 1
 }
 
 .filters button {
@@ -16,7 +16,7 @@
 }
 
 .locations, .amenities {
-    height: 100%; width: 25%; padding-left: 30px;
+    height: 100%; width: 25%; padding-left: 30px; position: relative;
 }
 
 .locations {
@@ -29,4 +29,26 @@ h3 {
 
 h4 {
     font-weight: 400; font-size: 14px; margin: 0
+}
+
+h2 {
+    font-size: 16px;
+}
+
+.popover {
+    background-color: #FAFAFA; width: 78.5%; border: 1px solid #DDDDDD;
+    border-radius: 4px; display: none;
+    position: absolute; top: 100%; margin: 0; left: 0; padding: 30px;
+}
+
+.locations:hover .popover {
+    display: block;
+}
+
+.amenities:hover .popover {
+    display: block;
+}
+
+.popover li {
+    list-style: none;
 }
